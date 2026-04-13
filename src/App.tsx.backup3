@@ -1,0 +1,27 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ScrollStory from './components/ScrollStory';
+import HealthConcept from './components/HealthConcept';
+import BackgroundVideo from './components/BackgroundVideo';
+
+function App() {
+  console.log("App Rendering - Navbar + Hero + Story + Concept");
+  return (
+    <div className="relative min-h-screen bg-black text-white selection:bg-white selection:text-black">
+      <BackgroundVideo />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <div id="about">
+            <ScrollStory />
+          </div>
+          <HealthConcept />
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default App;

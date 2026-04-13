@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-black text-white selection:bg-white/30 overflow-x-hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+
+  i, .italic-emphasis {
+    font-family: 'Source Serif 4', serif;
+    @apply italic;
+  }
+}
+
+@layer components {
+  .liquid-glass {
+    background: rgba(60, 40, 30, 0.45);
+    backdrop-filter: blur(18px);
+    @apply border border-white/10 shadow-2xl;
+  }
+
+  .liquid-glass-strong {
+    background: rgba(45, 30, 20, 0.6);
+    backdrop-filter: blur(25px);
+    @apply border border-white/10 shadow-2xl;
+  }
+
+  .hero-panel-left {
+    @apply w-full lg:w-[52%] min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-32 z-10;
+  }
+
+  .hero-panel-right {
+    @apply hidden lg:flex lg:w-[48%] min-h-screen items-center justify-center relative z-10;
+  }
+
+  .food-card {
+    @apply liquid-glass p-6 rounded-3xl transition-all duration-500 overflow-hidden;
+  }
+
+  .food-card:hover {
+    @apply -translate-y-2 border-white/40 shadow-white/10 shadow-[0_0_30px_rgba(255,255,255,0.1)];
+  }
+
+  .menu-tab {
+    @apply px-6 py-2 rounded-full border border-white/10 hover:border-white/30 transition-all text-sm whitespace-nowrap;
+  }
+
+  .menu-tab.active {
+    @apply bg-white text-black border-white;
+  }
+
+  .feature-pill {
+    @apply px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs uppercase tracking-widest backdrop-blur-md;
+  }
+
+  .primary-btn {
+    @apply px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all active:scale-95;
+  }
+
+  .secondary-btn {
+    @apply px-8 py-3 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm font-semibold hover:bg-white/10 transition-all active:scale-95;
+  }
+}
+
+.parallax-container {
+  @apply relative w-full h-[60vh] overflow-hidden;
+}
+
+.parallax-image {
+  @apply absolute inset-0 w-full h-[120%] object-cover -top-[10%];
+  will-change: transform;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.tilt-inner {
+  transform: translateZ(50px);
+}

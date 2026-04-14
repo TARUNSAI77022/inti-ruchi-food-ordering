@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Leaf, Flame, Heart, Zap, HeartPulse, Droplets } from 'lucide-react';
+import { Leaf, Flame, Heart, Zap } from 'lucide-react';
 
 const STATS = [
     { label: "Traditional Dishes", value: "50+", sub: "Authentic Andhra", icon: <Leaf size={28} /> },

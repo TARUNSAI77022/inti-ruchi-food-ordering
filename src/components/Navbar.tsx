@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           className="flex flex-col"
         >
-          <span className="text-xl font-bold tracking-widest text-white leading-none">GODAVARI</span>
+          <span className="text-xl font-bold tracking-widest text-white leading-none">DECCAN LEAF</span>
           <span className="text-[10px] tracking-[0.3em] text-white/60 font-medium">VARI VINDHU MARYADA</span>
         </motion.div>
 

@@ -6,7 +6,7 @@ const Testimonials: React.FC = () => {
   const reviews = [
     { name: "Srinivas Rao", role: "Food Critic", text: "The best Andhra meals experience — authentic flavors and incredible hospitality. Each dish tells a story of heritage." },
     { name: "Priya Varma", role: "Local Guide", text: "Simply outstanding. The Gongura mutton and shrimp curry are to die for. The ambiance and glass panels make it a truly premium experience." },
-    { name: "Anish Kumar", role: "Chef", text: "Authentic recipes crafted with precision. The spices are roasted perfectly, capturing the true essence of Godavari cuisine." }
+    { name: "Anish Kumar", role: "Chef", text: "Authentic recipes crafted with precision. The spices are roasted perfectly, capturing the true essence of Deccan cuisine." }
   ];
 
   return (
@@ -50,10 +50,10 @@ const Testimonials: React.FC = () => {
            <div className="flex flex-col space-y-12">
               <div className="flex flex-col space-y-6">
                  <h2 className="text-5xl md:text-7xl font-light text-white tracking-tighter">
-                    Godavari <br /> <span className="italic-emphasis opacity-60">Vari Vindhu Maryada</span>
+                    Deccan Leaf <br /> <span className="italic-emphasis opacity-60">Vari Vindhu Maryada</span>
                  </h2>
                  <p className="text-white/40 text-lg leading-relaxed max-w-sm">
-                    Authentic Andhra cuisine celebrating the flavors of the Godavari region.
+                    Authentic Andhra cuisine celebrating the flavors of the Deccan region.
                  </p>
               </div>
 
@@ -78,7 +78,7 @@ const Testimonials: React.FC = () => {
                     <div className="w-12 h-12 rounded-2xl liquid-glass flex items-center justify-center text-white/50"><Mail size={20} /></div>
                     <div className="flex flex-col space-y-1 pt-2">
                        <span className="text-white font-medium">Inquiries</span>
-                       <span className="text-white/40 text-sm">hello@godavarivvm.com</span>
+                       <span className="text-white/40 text-sm">hello@thedeccanleaf.com</span>
                     </div>
                  </div>
               </div>

@@ -1,5 +1,5 @@
 export const menuData = {
-  "Godavari Specials": [
+  "Deccan Leaf Specials": [
     { name: "Chilli Gaara Natukodi", price: "₹369", description: "Traditional spicy country chicken served with crispy Gaara." },
     { name: "Chilli Gaara Mutton Curry", price: "₹389", description: "Tender mutton curry paired with traditional lentil donuts." },
     { name: "Chilli Gaara Royya Kura", price: "₹389", description: "Spicy prawn curry served with authentic Andhra Gaara." },
@@ -13,7 +13,7 @@ export const menuData = {
     { name: "Chittimutyalau Pulao Prawn", price: "₹359", description: "Fragrant pulao prepared with fresh prawns and spices." }
   ],
   "Sunday Specials": [
-    { name: "Bommidayala Pulusu", price: "₹319", description: "Traditional tangy fish stew, a Sunday Godavari classic." },
+    { name: "Bommidayala Pulusu", price: "₹319", description: "Traditional tangy fish stew, a Sunday Deccan Leaf classic." },
     { name: "Mulakaya Mutton", price: "₹359", description: "Unique combination of drumstick and mutton in a rich gravy." },
     { name: "ChittiMutyalu Pulao Chicken", price: "₹259", description: "Sunday special chicken pulao with aromatic small grains." },
     { name: "ChittiMutyalu Pulao Mutton", price: "₹359", description: "Premium mutton pulao using heritage rice varieties." },
@@ -47,12 +47,12 @@ export const menuData = {
     { name: "Chilli Fish", price: "₹299", description: "Fish fillets tossed in a spicy soy and chilli glaze." },
     { name: "Pacchi Mirchi Chapa Vepudu", price: "₹309", description: "Andhra style fish fry with green chilli masala." },
     { name: "Fish 65", price: "₹299", description: "Tangy and spicy deep-fried fish chunks." },
-    { name: "Godavari Chapa Vepudu", price: "₹599", description: "Full fish fry prepared in authentic Godavari style." },
+    { name: "Deccan Leaf Chapa Vepudu", price: "₹599", description: "Full fish fry prepared in authentic Deccan Leaf style." },
     { name: "Chilli Prawns", price: "₹299", description: "Succulent prawns tossed in a fiery chilli sauce." },
     { name: "Prawn 65", price: "₹299", description: "Spicy marinated prawns fried to perfection." },
     { name: "Chittinaadu Royyala Vepudu", price: "₹349", description: "Regional prawn fry with bold Chettinad spices." },
     { name: "Vellulli Royyala Vepudu", price: "₹349", description: "Garlic infused prawn fry, aromatic and spicy." },
-    { name: "Godavari Royyala Vepudu", price: "₹369", description: "Signature prawn fry from the Godavari river banks." }
+    { name: "Deccan Leaf Royyala Vepudu", price: "₹369", description: "Signature prawn fry from the Deccan Leaf river banks." }
   ],
   "Veg Curries": [
     { name: "Paneer Curry", price: "₹199", description: "Fresh cottage cheese in a traditional spice gravy." },
@@ -87,7 +87,7 @@ export const menuData = {
   "Fast Food": [
     { name: "Veg Fried Rice / Noodles", price: "₹239", description: "Street-style vegetable stir-fry with rice or noodles." },
     { name: "Chicken Fried Rice / Noodles", price: "₹259", description: "Savory chicken stir-fry with aromatic rice or noodles." },
-    { name: "Godavari Special Fried Rice", price: "₹279", description: "Our chef's signature fusion fried rice." },
+    { name: "Deccan Leaf Special Fried Rice", price: "₹279", description: "Our chef's signature fusion fried rice." },
     { name: "Mixed Fried Rice", price: "₹299", description: "Combination of egg, chicken and prawns stir-fry." },
     { name: "Paneer Fried Rice / Noodles", price: "₹269", description: "Fried rice or noodles with golden paneer cubes." }
   ],

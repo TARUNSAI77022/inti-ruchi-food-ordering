@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
           {/* Logo & Info */}
           <div className="flex flex-col space-y-4 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start">
-               <span className="text-xl font-bold tracking-widest text-white leading-none">GODAVARI</span>
+               <span className="text-xl font-bold tracking-widest text-white leading-none">DECCAN LEAF</span>
                <span className="text-[10px] tracking-[0.3em] text-white/60 font-medium">VARI VINDHU MARYADA</span>
             </div>
             <p className="text-white/30 text-xs leading-relaxed max-w-[200px]">
-               Authentic Andhra cuisine celebrating the flavors of the Godavari region.
+               Authentic Andhra cuisine celebrating the flavors of the Deccan region.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
 
           {/* Copyright */}
           <div className="flex flex-col items-center md:items-end space-y-2">
-             <span className="text-white/20 text-[10px] uppercase tracking-widest">© 2026 Godavari VVM</span>
+             <span className="text-white/20 text-[10px] uppercase tracking-widest">© 2026 The Deccan Leaf</span>
              <span className="text-white/10 text-[8px] uppercase tracking-widest">Designed for Fine Dining</span>
           </div>
 

@@ -11,13 +11,13 @@ const INGREDIENTS = [
     { 
         name: "Gongura Leaves", 
         img: "/assets/images/gongura-leaves.png", 
-        desc: "Native sorel leaves that provide the characteristic tangy, sour flavor signature to many Godavari delicacies.",
+        desc: "Native sorel leaves that provide the characteristic tangy, sour flavor signature to many Deccan Leaf delicacies.",
         tag: "Tangy Core"
     },
     { 
-        name: "Godavari River Fish", 
+        name: "Deccan Fish", 
         img: "/assets/images/godavari-fish.png", 
-        desc: "Fresh daily catch from the river Godavari, delivered straight to our kitchen for the perfect fish pulusu.",
+        desc: "Fresh daily catch from the Deccan rivers, delivered straight to our kitchen for the perfect fish pulusu.",
         tag: "Fresh Catch"
     },
     { 

@@ -12,7 +12,7 @@ const stats = [
 const ingredients = [
   { name: "Guntur Chillies", desc: "Sun-dried fiery red chillies providing the signature Andhra heat.", icon: "🔥" },
   { name: "Gongura Leaves", desc: "Tangy Roselle leaves used in legendary meat and vegetable curries.", icon: "🌿" },
-  { name: "Godavari River Fish", desc: "Freshly caught local river fish prepared with secret spice blends.", icon: "🐟" },
+  { name: "Deccan Fish", desc: "Freshly caught local river fish prepared with secret spice blends.", icon: "🐟" },
   { name: "Andhra Spices", desc: "Hand-ground spices including coriander, cumin, and clove aromatic blends.", icon: "✨" }
 ];
 

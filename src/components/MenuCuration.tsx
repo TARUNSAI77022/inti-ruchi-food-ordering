@@ -35,7 +35,7 @@ const MENU_DATA = {
         { name: 'Paneer Curry', price: '₹240', tag: 'Classic', desc: 'Simple and comforting home-style paneer gravy.' },
     ],
     'Non-Veg Curries': [
-        { name: 'Godavari Egg Pulusu', price: '₹210', tag: 'Tangy', desc: 'Signature Godavari style tangy egg stew.' },
+        { name: 'Deccan Leaf Egg Pulusu', price: '₹210', tag: 'Tangy', desc: 'Signature Deccan Leaf style tangy egg stew.' },
         { name: 'Gongura Chicken', price: '₹260', tag: 'Iconic', desc: 'Andhra classic chicken cooked with sour sorrel leaves.' },
         { name: 'Gongura Mutton', price: '₹320', tag: 'Must Try', desc: 'Tender mutton pieces in deep gongura masala.' },
         { name: 'Kadai Chicken', price: '₹270', tag: 'Spicy', desc: 'Wok-tossed chicken with bell peppers and spices.' },
@@ -45,7 +45,7 @@ const MENU_DATA = {
         { name: 'Veg Pulav', price: '₹240', tag: 'Healthy', desc: 'Aromatic basmati rice with mixed seasonal vegetables.' },
         { name: 'Paneer Pulav', price: '₹260', tag: 'Rich', desc: 'Light yet fragrant rice with marinated paneer chunks.' },
         { name: 'Chicken Pulav', price: '₹280', tag: 'Popular', desc: 'Spiced Andhra style chicken and aromatic rice.' },
-        { name: 'Shrimp Pulav', price: '₹320', tag: 'Premium', desc: 'Seafood and rice cooked in traditional Godavari style.' },
+        { name: 'Shrimp Pulav', price: '₹320', tag: 'Premium', desc: 'Seafood and rice cooked in traditional Deccan Leaf style.' },
         { name: 'Mutton Roast Pulav', price: '₹340', tag: 'Signature', desc: 'Royal mutton roast with heritage spiced rice.' },
     ],
     'Biryani': [

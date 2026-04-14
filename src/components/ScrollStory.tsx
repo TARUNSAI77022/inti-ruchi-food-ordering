@@ -9,7 +9,7 @@ const ScrollStory: React.FC = () => {
   });
 
   const messages = [
-    { text: "The taste of the Godavari region.", delay: 0 },
+    { text: "The taste of the Deccan region.", delay: 0 },
     { text: "Recipes passed through generations.", delay: 0.2 },
     { text: "Spices roasted with tradition.", delay: 0.4 },
     { text: "A feast that celebrates Andhra heritage.", delay: 0.6 },

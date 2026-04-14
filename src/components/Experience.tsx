@@ -42,7 +42,7 @@ const Experience: React.FC = () => {
                         Authentic Andhra <br />
                         <span className="font-serif italic text-white/40 lowercase tracking-tight">Dining Experience.</span>
                     </motion.h2>
-                    <p className="text-white/30 font-poppins text-lg lg:text-2xl max-w-2xl mx-auto tracking-[0.3em] uppercase leading-relaxed font-medium">The heart of Godavari on your plate.</p>
+                    <p className="text-white/30 font-poppins text-lg lg:text-2xl max-w-2xl mx-auto tracking-[0.3em] uppercase leading-relaxed font-medium">The heart of Deccan Leaf on your plate.</p>
                 </div>
 
                 {/* Stats Grid */}

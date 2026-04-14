@@ -10,7 +10,6 @@ const Footer: React.FC = () => {
           <div className="flex flex-col space-y-4 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start">
                <span className="text-xl font-bold tracking-widest text-white leading-none">INTI RUCHI BHOJANAM</span>
-               <span className="text-[10px] tracking-[0.3em] text-white/60 font-medium">VARI VINDHU MARYADA</span>
             </div>
             <p className="text-white/30 text-xs leading-relaxed max-w-[200px]">
                Authentic Andhra cuisine celebrating the flavors of the Deccan region.

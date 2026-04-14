@@ -34,7 +34,6 @@ const Navbar: React.FC = () => {
           className="flex flex-col"
         >
           <span className="text-xl font-bold tracking-widest text-white leading-none">INTI RUCHI BHOJANAM</span>
-          <span className="text-[10px] tracking-[0.3em] text-white/60 font-medium">VARI VINDHU MARYADA</span>
         </motion.div>
 
         {/* Desktop Links */}

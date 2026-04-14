@@ -50,7 +50,7 @@ const Testimonials: React.FC = () => {
            <div className="flex flex-col space-y-12">
               <div className="flex flex-col space-y-6">
                  <h2 className="text-5xl md:text-7xl font-light text-white tracking-tighter">
-                    Inti Ruchi Bhojanam <br /> <span className="italic-emphasis opacity-60">Vari Vindhu Maryada</span>
+                    Inti Ruchi Bhojanam
                  </h2>
                  <p className="text-white/40 text-lg leading-relaxed max-w-sm">
                     Authentic Andhra cuisine celebrating the flavors of the Deccan region.

@@ -11,7 +11,7 @@ const INGREDIENTS = [
     { 
         name: "Gongura Leaves", 
         img: "/assets/images/gongura-leaves.png", 
-        desc: "Native sorel leaves that provide the characteristic tangy, sour flavor signature to many Deccan Leaf delicacies.",
+        desc: "Native sorel leaves that provide the characteristic tangy, sour flavor signature to many Inti Ruchi Bhojanam delicacies.",
         tag: "Tangy Core"
     },
     { 

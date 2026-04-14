@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 const dishes = [
   { 
     name: "Andhra Meals on Banana Leaf", 
-    desc: "The soul of Deccan Leaf — served with love and tradition.", 
+    desc: "The soul of Inti Ruchi Bhojanam — served with love and tradition.", 
     img: "/assets/andhra-thali.png",
     tag: "Most Popular"
   },
@@ -15,7 +15,7 @@ const dishes = [
     tag: "Chef Special"
   },
   { 
-    name: "Deccan Leaf Spice Shrimp Curry", 
+    name: "Inti Ruchi Bhojanam Spice Shrimp Curry", 
     desc: "A bold, tangy coastal delicacy with fresh shrimp.", 
     img: "/assets/shrimp-curry.png",
     tag: "New"
@@ -132,7 +132,7 @@ const SlidingFoodGallery: React.FC = () => {
         <div className="flex flex-col space-y-6">
            <div className="feature-pill w-fit">Showcase</div>
            <h2 className="text-5xl md:text-7xl font-light text-white tracking-tighter">
-              Signature Dishes <br /> <span className="italic-emphasis opacity-60">from Deccan Leaf</span>
+              Signature Dishes <br /> <span className="italic-emphasis opacity-60">from Inti Ruchi Bhojanam</span>
            </h2>
            <p className="text-white/40 text-lg md:text-xl leading-relaxed max-w-xl">
              Authentic Andhra flavors crafted with traditional spices and heritage cooking techniques passed through generations.

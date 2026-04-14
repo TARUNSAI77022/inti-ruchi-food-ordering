@@ -50,7 +50,7 @@ const Testimonials: React.FC = () => {
            <div className="flex flex-col space-y-12">
               <div className="flex flex-col space-y-6">
                  <h2 className="text-5xl md:text-7xl font-light text-white tracking-tighter">
-                    Deccan Leaf <br /> <span className="italic-emphasis opacity-60">Vari Vindhu Maryada</span>
+                    Inti Ruchi Bhojanam <br /> <span className="italic-emphasis opacity-60">Vari Vindhu Maryada</span>
                  </h2>
                  <p className="text-white/40 text-lg leading-relaxed max-w-sm">
                     Authentic Andhra cuisine celebrating the flavors of the Deccan region.
@@ -78,7 +78,7 @@ const Testimonials: React.FC = () => {
                     <div className="w-12 h-12 rounded-2xl liquid-glass flex items-center justify-center text-white/50"><Mail size={20} /></div>
                     <div className="flex flex-col space-y-1 pt-2">
                        <span className="text-white font-medium">Inquiries</span>
-                       <span className="text-white/40 text-sm">hello@thedeccanleaf.com</span>
+                       <span className="text-white/40 text-sm">hello@intiruchibhojanam.com</span>
                     </div>
                  </div>
               </div>

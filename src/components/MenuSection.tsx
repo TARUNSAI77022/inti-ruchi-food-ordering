@@ -4,12 +4,13 @@ import { menuData } from '../data/menu';
 
 const getDishImage = (name: string) => {
   const n = name.toLowerCase();
-  if (n.includes('chicken') || n.includes('kodi') || n.includes('natukodi')) return '/assets/chicken-vepudu.png';
+  if (n.includes('biryani') || n.includes('pulao') || n.includes('rice') || n.includes('sangati')) return '/assets/paneer-biryani.png';
   if (n.includes('mutton')) return '/assets/gongura-mutton.png';
-  if (n.includes('prawn') || n.includes('royya')) return '/assets/prawns-fry.png';
-  if (n.includes('fish') || n.includes('chepala') || n.includes('korameenu') || n.includes('chapa')) return '/assets/fish-pulusu.png';
+  if (n.includes('prawn') || n.includes('royya') || n.includes('royalu')) return '/assets/prawns-fry.png';
+  if (n.includes('fish') || n.includes('chepala') || n.includes('korameenu') || n.includes('chapa') || n.includes('apollo')) return '/assets/fish-pulusu.png';
+  if (n.includes('chicken') || n.includes('kodi') || n.includes('natukodi')) return '/assets/chicken-vepudu.png';
   if (n.includes('paneer')) return '/assets/paneer-biryani.png';
-  if (n.includes('thali') || n.includes('meals')) return '/assets/andhra-thali.png';
+  if (n.includes('veg') || n.includes('paneer') || n.includes('corn') || n.includes('dal') || n.includes('tomato') || n.includes('mushroom')) return '/assets/andhra-thali.png';
   return '/assets/shrimp-curry.png'; // Default fallback
 };
 

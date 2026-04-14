@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
               <span className="italic-emphasis font-light opacity-80">Andhra</span>
             </h1>
             <h2 className="text-3xl md:text-5xl font-light text-white/70 tracking-tight">
-              Flavors of <span className="italic-emphasis">Deccan Leaf</span>
+              Flavors of <span className="italic-emphasis">Inti Ruchi Bhojanam</span>
             </h2>
           </motion.div>
 

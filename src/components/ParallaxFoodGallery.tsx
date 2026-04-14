@@ -69,7 +69,7 @@ const ParallaxFoodGallery: React.FC = () => {
                     className="w-full h-[140%] object-cover object-center grayscale-[0.4] group-hover:grayscale-0 transition-grayscale duration-[2s]" 
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
-                      <h4 className="text-2xl md:text-3xl font-light text-white tracking-tighter">Deccan Leaf Spice <br/><span className="italic-emphasis">Shrimp Curry</span></h4>
+                      <h4 className="text-2xl md:text-3xl font-light text-white tracking-tighter">Inti Ruchi Bhojanam Spice <br/><span className="italic-emphasis">Shrimp Curry</span></h4>
                    </div>
                 </motion.div>
              </div>

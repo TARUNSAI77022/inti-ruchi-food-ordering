@@ -1,111 +1,160 @@
 export const menuData = {
-  "Deccan Leaf Specials": [
-    { name: "Chilli Gaara Natukodi", price: "₹369", description: "Traditional spicy country chicken served with crispy Gaara." },
-    { name: "Chilli Gaara Mutton Curry", price: "₹389", description: "Tender mutton curry paired with traditional lentil donuts." },
-    { name: "Chilli Gaara Royya Kura", price: "₹389", description: "Spicy prawn curry served with authentic Andhra Gaara." },
-    { name: "Chilli Gaara Kodi Kura", price: "₹349", description: "Classic chicken curry accompanied by specialty Gaara." }
+  "Inti Ruchi Bhojanam Specials": [
+    { name: "Chilli gaara natukodi", price: "₹369", description: "Authentic spicy native chicken with gaari." },
+    { name: "Chilli gaara Mutton Curry", price: "₹389", description: "Traditional mutton curry pairing." },
+    { name: "Chilli Gaara Royya Kuura", price: "₹389", description: "Spicy prawn curry with gaari." },
+    { name: "Chilli Gaara Kodi Kuura", price: "₹349", description: "Chicken curry specialty." }
   ],
   "Friday Specials": [
-    { name: "Korameenu Kuura", price: "₹319", description: "Prestige murky fish curry, a Friday coastal favorite." },
-    { name: "Pacchi Royyalu Mamidikaya", price: "₹349", description: "Fresh prawns cooked with tangy raw mango spices." },
-    { name: "Chittimutyalau Pulao Chicken", price: "₹259", description: "Aromatic short-grain rice pulao with tender chicken." },
-    { name: "Chittimutyalau Pulao Mutton", price: "₹359", description: "Royal short-grain rice pulao featuring succulent mutton." },
-    { name: "Chittimutyalau Pulao Prawn", price: "₹359", description: "Fragrant pulao prepared with fresh prawns and spices." }
+    { name: "Korameenu Kuura", price: "₹319", description: "Friday special prestige fish curry." },
+    { name: "Pacchi Royyalu Mamidikaya", price: "₹349", description: "Prawns cooked in raw mango." },
+    { name: "Chittimutyalu pulao Chicken", price: "₹259", description: "Fragrant short grain chicken pulao." },
+    { name: "Chittimutyalu pulao Mutton", price: "₹359", description: "Rich short grain mutton pulao." },
+    { name: "Chittimutyalu pulao Prawn", price: "₹359", description: "Aromatic small grain prawn pulao." }
   ],
   "Sunday Specials": [
-    { name: "Bommidayala Pulusu", price: "₹319", description: "Traditional tangy fish stew, a Sunday Deccan Leaf classic." },
-    { name: "Mulakaya Mutton", price: "₹359", description: "Unique combination of drumstick and mutton in a rich gravy." },
-    { name: "ChittiMutyalu Pulao Chicken", price: "₹259", description: "Sunday special chicken pulao with aromatic small grains." },
-    { name: "ChittiMutyalu Pulao Mutton", price: "₹359", description: "Premium mutton pulao using heritage rice varieties." },
-    { name: "ChittiMutyalu Pulao Prawn", price: "₹359", description: "Spicy prawn pulao, the perfect Sunday indulgence." }
+    { name: "Bommidayala Pulusu", price: "₹319", description: "Tangy fish stew classic." },
+    { name: "Mulakaya Mutton", price: "₹359", description: "Mutton cooked with drumsticks." },
+    { name: "ChittiMutyalu pulao Chicken", price: "₹259", description: "Sunday special chicken pulav." },
+    { name: "ChittiMutyalu pulao mutton", price: "₹359", description: "Sunday special mutton pulav." },
+    { name: "ChittiMutyalu pulao prawn", price: "₹359", description: "Sunday special prawn pulav." }
   ],
-  "Veg Starters": [
-    { name: "Veg Manchuria", price: "₹199", description: "Crispy vegetable balls in a classic Indo-Chinese sauce." },
-    { name: "Garlic Veg Manchuria", price: "₹209", description: "Manchurian with an extra punch of aromatic garlic." },
-    { name: "Kaju Veg Manchuria", price: "₹219", description: "Leveled up Manchurian topped with crunchy cashews." },
-    { name: "Paneer 65", price: "₹259", description: "Classic spicy tempered cottage cheese cubes." },
-    { name: "Chilli Paneer", price: "₹259", description: "Paneer tossed with bell peppers and spicy Chinese sauces." },
-    { name: "Paneer Manchuria", price: "₹259", description: "Fried paneer balls in a savory Manchurian gravy." },
-    { name: "Crispy Corn", price: "₹249", description: "Golden fried sweet corn seasoned with spices and herbs." }
+  "Starters": [
+    { name: "Veg Manchuria", price: "₹199", description: "Classic vegetable balls." },
+    { name: "Garlic Veg Manchuria", price: "₹209", description: "Garlic infused vegetable balls." },
+    { name: "Kaju Veg Manchuria", price: "₹219", description: "Veg manchuria with cashews." },
+    { name: "Paneer 65", price: "₹259", description: "Classic spicy fried cottage cheese." },
+    { name: "Chili Paneer (must try)", price: "₹259", description: "Paneer tossed with chillies." },
+    { name: "Paneer Manchuria", price: "₹259", description: "Paneer balls in soy-based sauce." },
+    { name: "Crispy corn", price: "₹249", description: "Fried sweet corn kernels." }
   ],
   "Non-Veg Starters": [
-    { name: "Chicken Manchuria", price: "₹289", description: "Juicy chicken pieces in a savory soy-based sauce." },
-    { name: "Chicken 65", price: "₹289", description: "Famous spicy deep-fried chicken specialty." },
-    { name: "Chilli Chicken", price: "₹289", description: "Tender chicken tossed with green chillies and onions." },
-    { name: "Chicken Majestic", price: "₹309", description: "Dry chicken appetizer with a rich yogurt and spice coating." },
-    { name: "Pacchi Mirchi Kodi Vepudu", price: "₹329", description: "Chicken fry with a kick of fresh green chilli paste." },
-    { name: "Kothimeera Kodi Vepudu", price: "₹329", description: "Fragrant chicken fry infused with fresh coriander." },
-    { name: "Ginger Chicken", price: "₹289", description: "Chicken sautéed with lots of fresh ginger and spices." },
-    { name: "Velluli Kodi Vepudu", price: "₹329", description: "Spicy chicken fry with intense garlic flavor." },
-    { name: "Chicken Lollipop", price: "₹299", description: "Frenched chicken wings fried to a crispy perfection." },
-    { name: "Pepper Chicken", price: "₹299", description: "Zesty chicken fry with freshly ground black pepper." },
-    { name: "Chicken Pakodi Kaaju", price: "₹329", description: "Crunchy chicken fritters mixed with roasted cashews." },
-    { name: "Dragon Chicken", price: "₹299", description: "Stir-fried chicken with a sweet and spicy kick." }
+    { name: "Chicken Manchuria", price: "₹289", description: "" },
+    { name: "Chicken 65", price: "₹289", description: "" },
+    { name: "Chilli Chicken", price: "₹289", description: "" },
+    { name: "Chicken Majestic", price: "₹309", description: "" },
+    { name: "Pacchi Mirchi Kodi Vepudu (must try)", price: "₹329", description: "" },
+    { name: "Kothimera Kodi Vepudu", price: "₹329", description: "" },
+    { name: "Ginger Chicken", price: "₹289", description: "" },
+    { name: "Velluli Kodi Vepudu (must try)", price: "₹329", description: "" },
+    { name: "Chicken Lollipop (Dry or wet)", price: "₹299", description: "" },
+    { name: "Pepper Chicken", price: "₹299", description: "" },
+    { name: "Chicken Pakodi Kaaju", price: "₹329", description: "" },
+    { name: "Dragon chicken", price: "₹299", description: "" }
   ],
-  "Seafood": [
-    { name: "Apollo Fish", price: "₹299", description: "Hyderabadi style spicy, boneless fried fish." },
-    { name: "Chilli Fish", price: "₹299", description: "Fish fillets tossed in a spicy soy and chilli glaze." },
-    { name: "Pacchi Mirchi Chapa Vepudu", price: "₹309", description: "Andhra style fish fry with green chilli masala." },
-    { name: "Fish 65", price: "₹299", description: "Tangy and spicy deep-fried fish chunks." },
-    { name: "Deccan Leaf Chapa Vepudu", price: "₹599", description: "Full fish fry prepared in authentic Deccan Leaf style." },
-    { name: "Chilli Prawns", price: "₹299", description: "Succulent prawns tossed in a fiery chilli sauce." },
-    { name: "Prawn 65", price: "₹299", description: "Spicy marinated prawns fried to perfection." },
-    { name: "Chittinaadu Royyala Vepudu", price: "₹349", description: "Regional prawn fry with bold Chettinad spices." },
-    { name: "Vellulli Royyala Vepudu", price: "₹349", description: "Garlic infused prawn fry, aromatic and spicy." },
-    { name: "Deccan Leaf Royyala Vepudu", price: "₹369", description: "Signature prawn fry from the Deccan Leaf river banks." }
+  "Sea Food": [
+    { name: "Apollo Fish", price: "₹299", description: "" },
+    { name: "Chilli Fish", price: "₹299", description: "" },
+    { name: "Pacchi Mirchi Chapa Vepudu (must try)", price: "₹309", description: "" },
+    { name: "Fish 65", price: "₹299", description: "" },
+    { name: "Inti Ruchi Bhojanam chapa vepudu (Full Fish)", price: "₹599", description: "" },
+    { name: "Chilli Prawns", price: "₹299", description: "" },
+    { name: "Prawn 65", price: "₹299", description: "" },
+    { name: "Chittinaadu Royyala Vepudu(must try)", price: "₹349", description: "" },
+    { name: "Vellulli royyala vepudu", price: "₹349", description: "" },
+    { name: "Inti Ruchi Bhojanam royyala vepudu", price: "₹369", description: "" }
   ],
   "Veg Curries": [
-    { name: "Paneer Curry", price: "₹199", description: "Fresh cottage cheese in a traditional spice gravy." },
-    { name: "Paneer Butter Masala", price: "₹219", description: "Rich, creamy tomato-based cottage cheese curry." },
-    { name: "Kaju Paneer Butter Masala", price: "₹239", description: "Creamy paneer curry loaded with roasted cashews." },
-    { name: "Tomato Curry", price: "₹159", description: "Simple yet flavorful Andhra style tomato base." },
-    { name: "Kaju Tomato Curry", price: "₹219", description: "Tangy tomato curry enriched with premium cashews." },
-    { name: "Kaaju Curry", price: "₹199", description: "Whole roasted cashews in a thick spicy gravy." },
-    { name: "Dal Fry", price: "₹149", description: "Lentils tempered with cumin, garlic and ghee." },
-    { name: "Mushroom Masala Curry", price: "₹239", description: "Tender mushrooms cooked in an aromatic spice blend." }
+    { name: "Paneer Curry", price: "₹199", description: "" },
+    { name: "Paneer Butter Masala", price: "₹219", description: "" },
+    { name: "Kaju Paneer Butter Masala", price: "₹239", description: "" },
+    { name: "Tomato Curry", price: "₹159", description: "" },
+    { name: "Kaju Tomato Curry", price: "₹219", description: "" },
+    { name: "Kaaju Curry", price: "₹199", description: "" },
+    { name: "Dal Fry", price: "₹149", description: "" },
+    { name: "Mushroom masala Curry", price: "₹239", description: "" }
   ],
   "Non-Veg Curries": [
-    { name: "Kodi Vepudu", price: "₹319", description: "Classic Andhra style dry chicken roast." },
-    { name: "Kodi Kura", price: "₹319", description: "Humble and delicious home-style chicken gravy." },
-    { name: "Natu Kodi Kura", price: "₹349", description: "Spicy and robust country chicken curry." },
-    { name: "Boneless Chicken Curry", price: "₹359", description: "Tender boneless chicken in a rich flavorful sauce." },
-    { name: "Mutton Curry", price: "₹359", description: "Traditional slow-cooked mutton with local spices." },
-    { name: "Nellore Chepala Pulusu", price: "₹319", description: "Famous Nellore style tangy fish stew." },
-    { name: "Chitti Royyala Vepudu", price: "₹349", description: "Small river prawn roast with intense heat." },
-    { name: "Royyala Kura", price: "₹349", description: "Succulent prawns cooked in a traditional gravy." },
-    { name: "Mutton Fry", price: "₹359", description: "Pan-roasted mutton with caramelized onions and herbs." }
+    { name: "Kodi Vepudu(must try)", price: "₹319", description: "" },
+    { name: "Kodi kuura", price: "₹319", description: "" },
+    { name: "Natu Kodi Kuura", price: "₹349", description: "" },
+    { name: "Boneless Chicken Curry", price: "₹359", description: "" },
+    { name: "Mutton Curry", price: "₹359", description: "" },
+    { name: "Nellore Chepala Pulusu (must try)", price: "₹319", description: "" },
+    { name: "Chitti Royyala Vepudu", price: "₹349", description: "" },
+    { name: "Royyala Kuura", price: "₹349", description: "" },
+    { name: "Mutton Fry", price: "₹359", description: "" }
   ],
   "Egg Items": [
-    { name: "Egg 65", price: "₹249", description: "Spicy tempered fried hard-boiled eggs." },
-    { name: "Egg Masala", price: "₹199", description: "Boiled eggs in a thick tomato-onion gravy." },
-    { name: "Egg Bhurji", price: "₹179", description: "Spiced scrambled eggs with onions and chillies." },
-    { name: "Egg Curry", price: "₹199", description: "Simple and comforting egg gravy dish." },
-    { name: "Boiled Egg", price: "₹19", description: "Perfectly boiled nutritious farm-fresh egg." },
-    { name: "Roasted Boiled Egg", price: "₹39", description: "Boiled eggs roasted with a hint of spice." },
-    { name: "Chilli Egg", price: "₹249", description: "Fried eggs tossed in a spicy oriental glaze." }
+    { name: "Egg 65", price: "₹249", description: "" },
+    { name: "Egg Masala", price: "₹199", description: "" },
+    { name: "Egg Bhurji", price: "₹179", description: "" },
+    { name: "Egg Curry", price: "₹199", description: "" },
+    { name: "Boiled Egg", price: "₹19", description: "" },
+    { name: "Roasted Boiled Egg", price: "₹39", description: "" },
+    { name: "Chilli Egg", price: "₹249", description: "" }
   ],
-  "Fast Food": [
-    { name: "Veg Fried Rice / Noodles", price: "₹239", description: "Street-style vegetable stir-fry with rice or noodles." },
-    { name: "Chicken Fried Rice / Noodles", price: "₹259", description: "Savory chicken stir-fry with aromatic rice or noodles." },
-    { name: "Deccan Leaf Special Fried Rice", price: "₹279", description: "Our chef's signature fusion fried rice." },
-    { name: "Mixed Fried Rice", price: "₹299", description: "Combination of egg, chicken and prawns stir-fry." },
-    { name: "Paneer Fried Rice / Noodles", price: "₹269", description: "Fried rice or noodles with golden paneer cubes." }
+  "Fastfood & Chinese": [
+    { name: "Veg Fried Rice/Noodles", price: "₹239", description: "" },
+    { name: "Veg Manchuria Rice/Noodles", price: "₹249", description: "" },
+    { name: "Kaju Fried Rice/Noodles", price: "₹269", description: "" },
+    { name: "Paneer Fried Rice/Noodles", price: "₹269", description: "" },
+    { name: "Jeera Fried Rice", price: "₹239", description: "" },
+    { name: "Egg Fried Rice/Noodles", price: "₹249", description: "" },
+    { name: "Chicken Fried Rice/Noodles", price: "₹259", description: "" },
+    { name: "Chicken Fry Piece Fried Rice", price: "₹269", description: "" },
+    { name: "Inti Ruchi Bhojanam Special Chicken Fried Rice (must try)", price: "₹279", description: "" },
+    { name: "Mixed Fried Rice (chicken, prawn, fish)", price: "₹299", description: "" }
   ],
-  "Ragi Sangati": [
-    { name: "Ragi Sangati", price: "₹179", description: "Traditional healthy finger millet and rice balls." },
-    { name: "Natukodi Ragi Sangati", price: "₹349", description: "The ultimate combo: Sangati with spicy Natukodi." },
-    { name: "Chapa Pulusu Ragi Sangati", price: "₹329", description: "Healthy Sangati paired with tangy fish stew." },
-    { name: "Mutton Curry Ragi Sangati", price: "₹369", description: "Robust mutton curry served with traditional Sangati." }
+  "Ragi Sangati & Roti": [
+    { name: "Ragi Sangati", price: "₹179", description: "" },
+    { name: "Natukodi Ragi Sangati", price: "₹349", description: "" },
+    { name: "Chapa Pulusu Ragi Sangati", price: "₹329", description: "" },
+    { name: "Mutton Curry Ragi Sangati", price: "₹369", description: "" },
+    { name: "Pulka", price: "₹30", description: "" },
+    { name: "Chapathi", price: "₹30", description: "" },
+    { name: "Butter naan", price: "₹40", description: "" },
+    { name: "Naan", price: "₹30", description: "" }
   ],
-  "Rice & Breads": [
-    { name: "Steam Rice", price: "₹149", description: "Long-grain perfectly steamed white rice." },
-    { name: "Sambar Rice", price: "₹199", description: "Comforting rice mixed with traditional Andhra Sambar." },
-    { name: "Curd Rice", price: "₹199", description: "Cool and refreshing yogurt-based tempered rice." },
-    { name: "Butter Naan", price: "₹40", description: "Soft tandoor-baked bread with melting butter." },
-    { name: "Chapathi / Pulka", price: "₹30", description: "Whole wheat freshly prepared flatbread." }
+  "Biryani (Chicken)": [
+    { name: "Chicken Fry piece Biryani (must try)", price: "₹259 (Reg) | ₹459 (Handi)", description: "Family packing also available." },
+    { name: "Inti Ruchi Bhojanam chicken special Biryani (must try)", price: "₹299 (Reg) | ₹549 (Handi)", description: "Family: ₹929" },
+    { name: "Natukodi Biryani", price: "₹319 (Reg) | ₹560 (Handi)", description: "Family: ₹949" },
+    { name: "Gongura chicken Biryani", price: "₹279 (Reg) | ₹529 (Handi)", description: "" },
+    { name: "Chicken Mughlai Biryani", price: "₹279 (Reg) | ₹529 (Handi)", description: "" },
+    { name: "Chicken 65 Biryani", price: "₹279 (Reg) | ₹529 (Handi)", description: "" },
+    { name: "Chicken Boneless Biryani", price: "₹299 (Reg) | ₹549 (Handi)", description: "" },
+    { name: "Chicken Joint Biryani", price: "₹279 (Reg) | ₹529 (Handi)", description: "" },
+    { name: "Chicken lollypop Biryani", price: "₹279 (Reg) | ₹529 (Handi)", description: "" }
   ],
-  "Desserts & More": [
-    { name: "Gulab Jamun", price: "₹120", description: "Warm milk solids dunked in cardamom sugar syrup." },
-    { name: "Rasmalai", price: "₹120", description: "Soft cheese discs in sweetened saffron milk." }
+  "Biryani (Mutton & Seafood)": [
+    { name: "Mutton Biryani", price: "₹359 (Reg) | ₹629 (Handi)", description: "Family: ₹1029" },
+    { name: "Mutton Mughlai Biryani", price: "₹379 (Reg) | ₹649 (Handi)", description: "" },
+    { name: "Raju Gari Royyala Biryani (must try)", price: "₹359 (Reg) | ₹629 (Handi)", description: "" },
+    { name: "Fish Biryani", price: "₹299 (Reg) | ₹549 (Handi)", description: "" },
+    { name: "Mixed Biryani (must try)", price: "₹399 (Reg) | ₹699 (Handi)", description: "Chicken, mutton, prawn, fish" },
+    { name: "Egg Biryani", price: "₹199 (Reg) | ₹389 (Handi)", description: "" }
+  ],
+  "Biryani (Veg) & Pulao": [
+    { name: "Veg Biryani/Pulao", price: "₹219 (Reg) | ₹389 (Handi)", description: "" },
+    { name: "Paneer Biryani/Pulao", price: "₹259 (Reg) | ₹459 (Handi)", description: "" },
+    { name: "Kaju Biryani/Pulao", price: "₹269 (Reg) | ₹449 (Handi)", description: "" },
+    { name: "VegMix Biryani/Pulao", price: "₹299 (Reg) | ₹529 (Handi)", description: "" },
+    { name: "Chicken Pulao", price: "₹259 (Reg) | ₹459 (Handi)", description: "" },
+    { name: "Chicken Joint Pulao", price: "₹279 (Reg) | ₹529 (Handi)", description: "" },
+    { name: "Mutton Pulao", price: "₹359 (Reg) | ₹599 (Handi)", description: "" },
+    { name: "Raju Gari Royyala Pulao (must try)", price: "₹359 (Reg) | ₹599 (Handi)", description: "" },
+    { name: "Fish Pulao", price: "₹319 (Reg) | ₹569 (Handi)", description: "" },
+    { name: "Mixed Pulao", price: "₹399 (Reg) | ₹699 (Handi)", description: "" }
+  ],
+  "Rice Items": [
+    { name: "Steam Rice", price: "₹149", description: "" },
+    { name: "Sambhar Rice", price: "₹199", description: "" },
+    { name: "Tomato Rice", price: "₹189", description: "" },
+    { name: "Curd Rice", price: "₹199", description: "" }
+  ],
+  "Beverages": [
+    { name: "Badam Milk", price: "₹60", description: "" },
+    { name: "Coke", price: "₹40", description: "" },
+    { name: "Sprite", price: "₹40", description: "" },
+    { name: "Fanta", price: "₹40", description: "" },
+    { name: "Inti Ruchi Bhojanam special drink (Artos)", price: "₹40", description: "" },
+    { name: "Water Bottle", price: "MRP", description: "" },
+    { name: "Rajahmundry vari rose milk", price: "₹120", description: "" }
+  ],
+  "Desserts": [
+    { name: "GULAB JAMUN (ICE CREAM)(Add on)", price: "₹180/220", description: "" },
+    { name: "APRICOT DELIGHT", price: "₹180", description: "" },
+    { name: "INTI RUCHI BHOJANAM SPECIAL JUNNU", price: "₹150", description: "" }
   ]
 };

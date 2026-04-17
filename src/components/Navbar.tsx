@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu as MenuIcon, X, MapPin, Phone } from 'lucide-react';
+import { Menu as MenuIcon, X, MapPin, Phone, User, ShoppingBag } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const token = localStorage.getItem('token');
+  const user = JSON.parse(localStorage.getItem('user') || '{}');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,11 +20,19 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLogout = () => {
+    console.log("User logging out. Clearing session...");
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    navigate('/');
+    window.location.reload(); // Force reload to clear all states
+  };
+
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Menu', href: '#menu' },
-    { name: 'Story', href: '#story' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/#about' },
+    { name: 'Menu', href: '/#menu' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -28,26 +42,35 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <motion.div 
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="flex flex-col"
-        >
+        <Link to="/" className="flex flex-col">
           <span className="text-xl font-bold tracking-widest text-white leading-none">INTI RUCHI BHOJANAM</span>
-        </motion.div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-12">
           {navLinks.map((link) => (
-            <motion.a
+            <Link
               key={link.name}
-              href={link.href}
-              whileHover={{ scale: 1.05 }}
+              to={link.href}
               className="text-sm font-medium tracking-widest text-white/80 hover:text-white transition-colors"
             >
               {link.name.toUpperCase()}
-            </motion.a>
+            </Link>
           ))}
+          
+          {token ? (
+            <div className="flex items-center space-x-6 border-l border-white/10 pl-12">
+              {user.role === 'admin' && (
+                <Link to="/admin" className="text-sm font-bold tracking-widest text-white hover:text-white/80 transition-colors uppercase">Admin</Link>
+              )}
+              <button onClick={handleLogout} className="text-sm font-medium tracking-widest text-red-400 hover:text-red-300 transition-colors uppercase">Logout</button>
+            </div>
+          ) : (
+            <Link to="/login" className="flex items-center space-x-2 text-sm font-medium tracking-widest text-white/60 hover:text-white transition-colors">
+              <User size={16} />
+              <span className="uppercase">Login</span>
+            </Link>
+          )}
         </div>
 
         {/* Mobile Toggle */}
@@ -69,24 +92,25 @@ const Navbar: React.FC = () => {
             className="absolute top-full left-0 w-full bg-black/95 backdrop-blur-2xl border-b border-white/10 py-12 px-6 md:hidden flex flex-col space-y-8"
           >
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-2xl font-light tracking-widest text-white/70 hover:text-white"
+                className="text-2xl font-light tracking-widest text-white/70 hover:text-white uppercase"
               >
-                {link.name.toUpperCase()}
-              </a>
+                {link.name}
+              </Link>
             ))}
-            <div className="pt-8 border-t border-white/10 flex flex-col space-y-4">
-              <div className="flex items-center text-white/60 text-sm">
-                <MapPin size={16} className="mr-3" />
-                <span>Visakhapatnam | Hyderabad</span>
-              </div>
-              <div className="flex items-center text-white/60 text-sm">
-                <Phone size={16} className="mr-3" />
-                <span>+91 98765 43210</span>
-              </div>
+            
+            <div className="pt-8 border-t border-white/10 flex flex-col space-y-6">
+              {token ? (
+                <>
+                  {user.role === 'admin' && <Link to="/admin" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-bold tracking-widest text-white">ADMIN</Link>}
+                  <button onClick={handleLogout} className="text-2xl font-light tracking-widest text-red-400 text-left">LOGOUT</button>
+                </>
+              ) : (
+                <Link to="/login" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-light tracking-widest text-white/70">LOGIN</Link>
+              )}
             </div>
           </motion.div>
         )}
@@ -96,3 +120,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+

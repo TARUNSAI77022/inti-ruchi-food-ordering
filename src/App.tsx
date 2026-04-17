@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Menu from './pages/Menu';
 import Login from './pages/Login';
 import AdminDashboard from './pages/admin/Dashboard';
 import AdminFoods from './pages/admin/Foods';

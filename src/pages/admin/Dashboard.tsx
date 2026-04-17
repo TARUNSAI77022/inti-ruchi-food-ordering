@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { Utensils, ShoppingBag, TrendingUp, Users, ArrowUpRight } from 'lucide-react';
 import api from '../../services/api';
 import Sidebar from '../../components/admin/Sidebar';

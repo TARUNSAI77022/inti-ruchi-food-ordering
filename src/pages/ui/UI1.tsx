@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowLeft, SlidersHorizontal, ChevronRight, Loader2, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';

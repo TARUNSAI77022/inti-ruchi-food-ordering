@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Loader2, ArrowRight, ShoppingCart, Plus, Minus, Search, LogOut, User as UserIcon } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { ArrowRight, ShoppingCart, Plus, Minus, Search, LogOut, User as UserIcon } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { useCart } from '../../context/CartContext';
 import CartOverlay from '../../components/CartOverlay';

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Loader2, Search, ShoppingBag, ArrowRight, ChevronRight as RightIcon } from 'lucide-react';
+import { Loader2, Search, ShoppingBag, ArrowRight } from 'lucide-react';
 import api from '../services/api';
 import FoodCard from './FoodCard';
 import { useCart } from '../context/CartContext';

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Loader2, Plus, ShoppingCart, Minus, Search } from 'lucide-react';
+import { ArrowRight, Loader2, Plus, ShoppingCart, Minus, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import toast from 'react-hot-toast';
 import { useCart } from '../../context/CartContext';
 import CartOverlay from '../../components/CartOverlay';
 

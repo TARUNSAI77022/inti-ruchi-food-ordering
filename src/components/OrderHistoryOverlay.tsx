@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, X, Clock, ChevronRight, Package } from 'lucide-react';
+import { X, Clock, Package } from 'lucide-react';
 import api from '../services/api';
 
 interface OrderHistoryOverlayProps {

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
-import { ArrowRight, Play, Star, Sparkles, UtensilsCrossed } from 'lucide-react';
+import { ArrowRight, Play, Star, UtensilsCrossed } from 'lucide-react';
 
 const PremiumHero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ const PremiumHero = () => {
     visible: { 
       y: 0, 
       opacity: 1,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as any }
     }
   };
 
@@ -130,7 +130,7 @@ const PremiumHero = () => {
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as any }}
           className="relative perspective-1000 hidden lg:block"
         >
           {/* Main Hero Card with Mouse Tilt */}
@@ -166,7 +166,7 @@ const PremiumHero = () => {
             >
                <div className="flex items-center gap-5 mb-4">
                  <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-white shadow-glow-primary">
-                    <UtensilsCrossed size={30} />
+                    {React.cloneElement(<UtensilsCrossed />, { size: 36 } as any)}
                  </div>
                  <div>
                    <h4 className="text-2xl font-black text-white leading-none tracking-tighter">Michelin</h4>

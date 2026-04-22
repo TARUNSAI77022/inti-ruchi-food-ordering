@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { ShoppingCart, Menu, X, Home, Utensils, Info, Phone, Search } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -11,9 +11,8 @@ const PremiumNavbar = () => {
   const { totalItems } = useCart();
   const { scrollY } = useScroll();
 
-  // v4: Smooth values for scaling and blur
+  // v4: Smooth values for scaling
   const navScale = useTransform(scrollY, [0, 100], [1, 0.95]);
-  const navBlur = useTransform(scrollY, [0, 100], [0, 10]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +35,7 @@ const PremiumNavbar = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         style={{ scale: navScale }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as any }}
         className={`w-full max-w-6xl flex items-center justify-between px-6 py-3 rounded-[2rem] border border-white/5 shadow-2xl transition-all duration-500 relative overflow-hidden ${
           isScrolled ? 'bg-dark-900/40 backdrop-blur-2xl' : 'bg-transparent backdrop-blur-sm'
         }`}

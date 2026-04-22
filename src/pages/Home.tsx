@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                     className="flex flex-col items-center text-center group"
                   >
                     <div className="w-20 h-20 rounded-[2rem] bg-white/5 flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-700 shadow-glass-sm border border-white/5 group-hover:shadow-glow-primary">
-                      {React.cloneElement(f.icon as React.ReactElement, { size: 36 })}
+                      {React.cloneElement(f.icon as React.ReactElement<any>, { size: 36 })}
                     </div>
                     <h3 className="text-2xl font-black mb-4 tracking-tight group-hover:text-primary transition-colors">{f.title}</h3>
                     <p className="text-white/50 text-sm leading-relaxed font-medium px-4">{f.desc}</p>

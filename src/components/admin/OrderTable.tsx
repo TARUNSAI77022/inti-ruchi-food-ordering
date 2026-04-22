@@ -5,7 +5,7 @@ interface Order {
   _id: string;
   userId: { name: string; email: string };
   items: Array<{ foodId: { name: string }; quantity: number }>;
-  totalPrice: number;
+  totalAmount: number;
   status: string;
   createdAt: string;
 }
@@ -55,7 +55,7 @@ const OrderTable: React.FC<OrderTableProps> = ({ orders, onUpdateStatus }) => {
                  <div className="text-xs text-white/30 font-light">{order.userId?.email}</div>
               </td>
               <td className="px-8 py-8 text-sm font-bold text-white/90">
-                ₹{order.totalPrice}
+                ₹{order.totalAmount}
               </td>
               <td className="px-8 py-8">
                 <select 

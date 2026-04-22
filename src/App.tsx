@@ -12,6 +12,7 @@ import UI1 from './pages/ui/UI1';
 import UI2 from './pages/ui/UI2';
 import UI3 from './pages/ui/UI3';
 import UI4 from './pages/ui/UI4';
+import PremiumDemo from './pages/ui/PremiumDemo';
 import ProtectedRoute from './components/ProtectedRoute';
 import { CartProvider } from './context/CartContext';
 
@@ -57,6 +58,7 @@ const App: React.FC = () => {
           <Route path="/ui2" element={<UI2 />} />
           <Route path="/ui3" element={<UI3 />} />
           <Route path="/ui4" element={<UI4 />} />
+          <Route path="/premium" element={<PremiumDemo />} />
         </Routes>
       </CartProvider>
     </Router>

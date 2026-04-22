@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ShoppingCart, Plus, Minus, Search, LogOut, User as UserIcon } from 'lucide-react';
+import { ArrowRight, ShoppingCart, Plus, Minus, Search, LogOut, Clock, User as UserIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { useCart } from '../../context/CartContext';
 import CartOverlay from '../../components/CartOverlay';
+import OrderHistoryOverlay from '../../components/OrderHistoryOverlay';
 import { useAuth } from '../../context/AuthContext';
 
 const MEAL_TYPES = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snacks'];
@@ -106,6 +107,7 @@ const UI3: React.FC = () => {
   const [category, setCategory] = useState('All');
   const [mealType, setMealType] = useState('All');
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const { totalItems } = useCart();
   const { user, logout } = useAuth();
   const navigate = useNavigate();
@@ -144,6 +146,7 @@ const UI3: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#050505] text-white selection:bg-white/30">
       <CartOverlay isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+      <OrderHistoryOverlay isOpen={isHistoryOpen} onClose={() => setIsHistoryOpen(false)} />
 
       {/* Dynamic Background */}
       <div className="fixed inset-0 pointer-events-none">
@@ -182,6 +185,13 @@ const UI3: React.FC = () => {
                     >
                         {totalItems} Allocated
                     </motion.span>
+                </button>
+                <button 
+                    onClick={() => setIsHistoryOpen(true)}
+                    className="p-3 lg:p-4 bg-white/5 hover:bg-white hover:text-black border border-white/10 rounded-full transition-all group"
+                    title="Order History"
+                >
+                    <Clock size={18} />
                 </button>
                 <button 
                     onClick={handleLogout}

@@ -90,7 +90,7 @@ const Dashboard: React.FC = () => {
                          </div>
                       </div>
                       <div className="text-right">
-                         <p className="text-sm font-bold text-white mb-1">₹{order.totalPrice}</p>
+                         <p className="text-sm font-bold text-white mb-1">₹{order.totalAmount}</p>
                          <span className={`text-[8px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-white/10 ${order.status === 'completed' ? 'text-green-400 bg-green-400/10' : 'text-blue-400 bg-blue-400/10'}`}>
                            {order.status}
                          </span>

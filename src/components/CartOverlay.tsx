@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, X, Plus, Minus, Trash2, ArrowRight } from 'lucide-react';
+import { ShoppingBag, X, Plus, Minus, Trash2, ArrowRight, Loader2 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import api from '../services/api';
 import toast from 'react-hot-toast';
+import { v4 as uuidv4 } from 'uuid';
 
 interface CartOverlayProps {
   isOpen: boolean;
@@ -11,11 +15,47 @@ interface CartOverlayProps {
 
 const CartOverlay: React.FC<CartOverlayProps> = ({ isOpen, onClose }) => {
   const { cart, totalItems, totalPrice, updateQuantity, removeFromCart, clearCart } = useCart();
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handlePlaceOrder = () => {
-    toast.success("Order request dispatched to mainframe.");
-    clearCart();
-    onClose();
+  const handlePlaceOrder = async () => {
+    if (!user) {
+      toast.error("Authentication required to finalize allocation.");
+      navigate('/login');
+      onClose();
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const payload = {
+        items: cart.map(item => ({
+          foodId: item._id,
+          quantity: item.quantity
+        })),
+        idempotencyKey: uuidv4()
+      };
+
+      const res = await api.post('/orders', payload);
+
+      if (res.data.success) {
+        toast.success(`Success. Order ${res.data.data.orderNumber} initialized.`);
+        clearCart();
+        onClose();
+        // Option: navigate to a success page or order history
+      }
+    } catch (err: any) {
+      const errorMsg = err.response?.data?.error || "Order synchronization failed.";
+      toast.error(errorMsg);
+      
+      if (err.response?.status === 401) {
+        navigate('/login');
+        onClose();
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -50,7 +90,8 @@ const CartOverlay: React.FC<CartOverlayProps> = ({ isOpen, onClose }) => {
               </div>
               <button 
                 onClick={onClose}
-                className="p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/40 hover:text-white transition-all"
+                disabled={isSubmitting}
+                className="p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/40 hover:text-white transition-all disabled:opacity-50"
               >
                 <X size={20} />
               </button>
@@ -74,16 +115,17 @@ const CartOverlay: React.FC<CartOverlayProps> = ({ isOpen, onClose }) => {
                         <h3 className="text-sm font-medium uppercase tracking-tight leading-tight">{item.name}</h3>
                         <button 
                           onClick={() => removeFromCart(item._id)}
-                          className="opacity-0 group-hover:opacity-100 text-white/20 hover:text-red-400 transition-all"
+                          disabled={isSubmitting}
+                          className="opacity-0 group-hover:opacity-100 text-white/20 hover:text-red-400 transition-all disabled:opacity-0"
                         >
                           <Trash2 size={14} />
                         </button>
                       </div>
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3 bg-white/5 rounded-full px-3 py-1 border border-white/5">
-                          <button onClick={() => updateQuantity(item._id, -1)} className="text-white/40 hover:text-white"><Minus size={12} /></button>
+                          <button onClick={() => updateQuantity(item._id, -1)} disabled={isSubmitting} className="text-white/40 hover:text-white disabled:opacity-20"><Minus size={12} /></button>
                           <span className="text-xs font-bold tabular-nums min-w-[20px] text-center">{item.quantity}</span>
-                          <button onClick={() => updateQuantity(item._id, 1)} className="text-white/40 hover:text-white"><Plus size={12} /></button>
+                          <button onClick={() => updateQuantity(item._id, 1)} disabled={isSubmitting} className="text-white/40 hover:text-white disabled:opacity-20"><Plus size={12} /></button>
                         </div>
                         <p className="text-sm font-bold tracking-tight">₹{item.price * item.quantity}</p>
                       </div>
@@ -105,9 +147,14 @@ const CartOverlay: React.FC<CartOverlayProps> = ({ isOpen, onClose }) => {
                 </div>
                 <button 
                   onClick={handlePlaceOrder}
-                  className="w-full py-5 bg-white text-black font-bold text-[10px] tracking-[0.3em] uppercase rounded-2xl hover:bg-zinc-200 transition-all flex items-center justify-center gap-3 shadow-xl active:scale-[0.98]"
+                  disabled={isSubmitting}
+                  className="w-full py-5 bg-white text-black font-bold text-[10px] tracking-[0.3em] uppercase rounded-2xl hover:bg-zinc-200 transition-all flex items-center justify-center gap-3 shadow-xl active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Confirm Allocation <ArrowRight size={14} />
+                  {isSubmitting ? (
+                    <>Processing <Loader2 size={14} className="animate-spin" /></>
+                  ) : (
+                    <>Confirm Allocation <ArrowRight size={14} /></>
+                  )}
                 </button>
               </div>
             )}

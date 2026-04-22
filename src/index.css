@@ -4,6 +4,80 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .glass-effect {
+    @apply bg-glass backdrop-blur-md border border-glass-border;
+  }
+
+  .glass-card {
+    @apply glass-effect shadow-glass-sm rounded-2xl transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply bg-glass-hover border-white/20 shadow-3d-lg scale-[1.02];
+  }
+
+  .neumorph-inset {
+    background: #121214;
+    box-shadow: inset 8px 8px 16px #0a0a0b, inset -8px -8px 16px #1a1a1d;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-light via-primary to-accent;
+  }
+
+  .premium-blur {
+    @apply relative before:absolute before:-inset-2 before:bg-primary/20 before:blur-2xl before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity;
+  }
+
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3F%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    @apply opacity-[0.03] pointer-events-none absolute inset-0 mix-blend-overlay;
+  }
+
+  .mesh-gradient {
+    background: radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(249, 115, 22, 0.15) 0px, transparent 50%);
+  }
+
+  .card-glare {
+    @apply absolute inset-0 opacity-0 group-hover:opacity-20 pointer-events-none transition-opacity duration-300;
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.4) 0%, transparent 80%);
+  }
+
+  /* Clarity & Stacking System */
+  .z-nav { z-index: 100; }
+  .z-overlay { z-index: 90; }
+  .z-hero { z-index: 20; }
+  .z-base { z-index: 10; }
+  .z-bg { z-index: 0; }
+
+  .text-secondary {
+    @apply text-white/60 group-hover:text-white/80 transition-colors;
+  }
+
+  .text-caption {
+    @apply text-white/40 font-black uppercase tracking-[0.2em] text-[8px];
+  }
+
+  .section-spacer {
+    @apply py-32 md:py-48;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+}
+
 @layer base {
   html {
   @apply scroll-smooth;

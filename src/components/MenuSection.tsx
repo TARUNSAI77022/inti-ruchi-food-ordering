@@ -52,7 +52,7 @@ const MenuSection: React.FC = () => {
   return (
     <section 
         id="menu" 
-        className={`min-h-screen bg-black relative z-20 py-24 transition-all duration-500 ease-in-out ${isCartOpen ? 'lg:pr-[400px]' : 'pr-0'}`}
+        className={`min-h-screen relative z-10 py-32 md:py-48 transition-all duration-500 ease-in-out bg-black/10 backdrop-blur-[2px] ${isCartOpen ? 'lg:pr-[400px]' : 'pr-0'}`}
     >
       <div className="max-w-screen-xl mx-auto px-6 md:px-12 space-y-12">
         

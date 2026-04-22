@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { ArrowRight, Star, Sparkles } from 'lucide-react';
 
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
     visible: { 
       y: 0, 
       opacity: 1,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as any }
     }
   };
 
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
               style={{ rotateX, rotateY, y: y1, transformStyle: 'preserve-3d' }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as any }}
               className="relative group"
            >
               {/* Background Glow */}

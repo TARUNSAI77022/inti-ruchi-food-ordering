@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Plus, Minus, Check, Star, ShoppingBag, Heart } from 'lucide-react';
+import { Plus, Minus, Star, ShoppingBag, Heart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 interface Food {

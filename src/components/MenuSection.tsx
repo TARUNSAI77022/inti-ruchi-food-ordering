@@ -52,7 +52,7 @@ const MenuSection: React.FC = () => {
   return (
     <section 
         id="menu" 
-        className={`min-h-screen relative z-10 py-32 md:py-48 transition-all duration-500 ease-in-out bg-black/10 backdrop-blur-[2px] ${isCartOpen ? 'lg:pr-[400px]' : 'pr-0'}`}
+        className={`min-h-screen relative z-10 py-20 md:py-24 transition-all duration-500 ease-in-out bg-black/10 backdrop-blur-[2px] ${isCartOpen ? 'lg:pr-[400px]' : 'pr-0'}`}
     >
       <div className="max-w-screen-xl mx-auto px-6 md:px-12 space-y-12">
         
@@ -126,7 +126,7 @@ const MenuSection: React.FC = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8"
               >
                 {allFoods.map((item, i) => (
                   <motion.div

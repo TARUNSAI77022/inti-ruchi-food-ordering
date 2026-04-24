@@ -47,6 +47,7 @@ module.exports = {
         'float': 'float 6s ease-in-out infinite',
         'subtle-rotate': 'subtle-rotate 10s ease-in-out infinite',
         'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+        'gradient-x': 'gradient-x 15s ease infinite',
       },
       keyframes: {
         float: {
@@ -60,6 +61,10 @@ module.exports = {
         'pulse-glow': {
           '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
           '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+        },
+        'gradient-x': {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+          '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
         }
       }
     },

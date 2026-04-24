@@ -43,6 +43,7 @@ const App: React.FC = () => {
         <ScrollHandler />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/v9" element={<Home />} />
           <Route path="/menu" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<ProtectedRoute><UI3 /></ProtectedRoute>} />
@@ -65,8 +66,4 @@ const App: React.FC = () => {
   );
 };
 
-
-
-
 export default App;
-

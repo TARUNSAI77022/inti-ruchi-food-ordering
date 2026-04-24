@@ -84,7 +84,7 @@
 }
 
 body {
-  @apply bg-black text-white selection:bg-white/30 overflow-x-hidden;
+  @apply bg-[#0D0D0D] text-white selection:bg-white/30 overflow-x-hidden;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -163,4 +163,35 @@ body {
 
 .tilt-inner {
   transform: translateZ(50px);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(15px) rotate(-1deg); }
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 6s ease-in-out infinite;
+}
+
+.shadow-glow-primary {
+  box-shadow: 0 0 30px rgba(245, 166, 35, 0.25);
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }

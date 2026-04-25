@@ -55,7 +55,7 @@ const PremiumDemo = () => {
         <div className="absolute bottom-[10%] left-[-5%] w-[30%] h-[30%] bg-accent/5 rounded-full blur-[100px]" />
       </div>
 
-      <PremiumNavbar />
+      <PremiumNavbar onCartClick={() => {}} />
       
       <main className="relative z-10">
         <PremiumHero />

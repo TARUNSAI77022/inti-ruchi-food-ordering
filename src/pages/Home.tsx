@@ -1,7 +1,7 @@
-import React, { useState, useEffect, Suspense, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { ChevronDown, ArrowRight, Star, Plus, Minus, X, ShoppingCart, Check, ShoppingBag, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, Star, Plus, Minus, X, ShoppingBag, ArrowUpRight } from 'lucide-react';
 import NavbarV2 from '../components/NavbarV2';
 import CartOverlay from '../components/CartOverlay';
 import api from '../services/api';

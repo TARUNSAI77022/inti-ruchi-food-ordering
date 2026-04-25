@@ -1,5 +1,5 @@
 import React, { Suspense, useRef, useEffect } from 'react';
-import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
+import { motion, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { ArrowRight, UtensilsCrossed, Sparkles, Star } from 'lucide-react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Environment, Float, ContactShadows } from '@react-three/drei';

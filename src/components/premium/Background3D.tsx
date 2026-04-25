@@ -1,6 +1,5 @@
 import React, { useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { PerspectiveCamera, Float } from '@react-three/drei';
 import * as THREE from 'three';
 
 const Grid = () => {
@@ -55,9 +54,7 @@ const PointsComponent = React.forwardRef<THREE.Points>((_, ref) => {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          count={count}
-          array={positions}
-          itemSize={3}
+          args={[positions, 3]}
         />
       </bufferGeometry>
       <pointsMaterial
@@ -76,7 +73,7 @@ const Background3D = () => {
     <div className="fixed inset-0 z-0 pointer-events-none bg-[#0D0D0D]">
       <Suspense fallback={null}>
         <Canvas
-          gl={{ alpha: true, antialias: true, clearColor: [0, 0, 0, 0] }}
+          gl={{ alpha: true, antialias: true }}
           onCreated={({ gl }) => {
             gl.setClearColor(0x000000, 0);
           }}

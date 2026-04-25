@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { ShoppingBag, Menu, X, User, ChevronRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { useCart } from '../context/CartContext';
 const NavbarV2 = ({ onCartClick }: { onCartClick: () => void }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
+  useLocation();
   const { totalItems } = useCart();
   const { scrollY } = useScroll();
 
